@@ -1,0 +1,47 @@
+@mixin flex-row($alignItems: flex-start, $justifyContent: flex-start) {
+  display: flex;
+  align-items: $alignItems;
+  justify-content: $justifyContent;
+}
+
+@mixin flex-column($alignItems: flex-start, $justifyContent: flex-start) {
+  display: flex;
+  flex-direction: column;
+  align-items: $alignItems;
+  justify-content: $justifyContent;
+}
+
+@mixin set-wh($width: 100%, $height: 100%) {
+  width: $width;
+  height: $height;
+}
+
+@mixin font($fontSize: 28px, $fontWeight: bold, $color: #ffffff) {
+  color: $color;
+  font-weight: $fontWeight;
+  font-size: $fontSize;
+}
+
+@mixin mask($width: 100%, $height: 100%, $color: rgba(0, 0, 0, 0.7)) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: $color;
+  @include set-wh($width, $height);
+}
+
+@mixin ellipsis() {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+@mixin red-dot($ratio: 8px, $top: 10px, $right: 0) {
+  position: absolute;
+  top: $top;
+  right: $right;
+  width: $ratio;
+  height: $ratio;
+  background-color: red;
+  border-radius: 50%;
+}
