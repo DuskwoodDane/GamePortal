@@ -5,9 +5,11 @@
 </template>
 
 <script lang="ts" setup>
+
+import { useTest } from '../composables';
 const test = useTest();
 
-console.log('test==', test);
+console.log('test=', test);
 </script>
 <style scoped lang="scss">
 .box1 {
