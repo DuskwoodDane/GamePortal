@@ -7,8 +7,8 @@
 <script setup></script>
 <style scoped lang="scss">
 .box {
-  background: red;
-  width: 300px;
-  height: 300px;
+  // background: red;
+  // width: 300px;
+  // height: 300px;
 }
 </style>
