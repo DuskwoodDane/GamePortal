@@ -13,6 +13,11 @@ export default defineNuxtConfig({
       },
     },
   },
+  runtimeConfig: {
+    public: {
+      themeVersion: process.env.NUXT_PUBLIC_THEME_VERSION,
+    },
+  },
   postcss: {
     plugins: {
       'postcss-px-to-viewport-8-plugin': {

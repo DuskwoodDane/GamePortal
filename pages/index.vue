@@ -8,7 +8,10 @@
 import { useTest } from '../composables';
 const test = useTest();
 
-console.log('test=', test);
+const config = useRuntimeConfig();
+
+console.log('test=', AuthEnum.ADMIN, test);
+console.log('process==', config);
 </script>
 <style scoped lang="scss">
 .box1 {
